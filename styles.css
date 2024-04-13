@@ -123,6 +123,7 @@
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.5px;
+
 }
 
 .socials-title {
@@ -131,7 +132,19 @@
     margin-bottom: 24px;
 }
 
+.socials-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px 8px;
+    margin-bottom: 96px;
+}
+
+
 .social-link {
+    display: grid;
+    grid-template-columns: 32px 1fr;
+    gap: 16px;
+    align-items: center;
     padding: 8px;
     color: var(--common-black, #2f2f37);
     border-radius: 16px;
@@ -139,6 +152,12 @@
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.5px;
+}
+
+@media (min-width: 768px) {
+    .socials-list {
+        gap: 24px;
+    }
 }
 
 .socials-item:nth-child(1) .social-link {
